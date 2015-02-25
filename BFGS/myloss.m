@@ -1,5 +1,6 @@
 %% the loss=1-<w,x>*y
 %% the gradient: g=lw+dl/dw
+%% s=w*x;
 function [v,g] = myloss(x,y,s,lr,w)
   %x:p*1; y:1*1; s:1*1; v:1*1; g:p*1;
   p=size(x,1); n=size(x,2);
