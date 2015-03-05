@@ -22,4 +22,4 @@ function [v,g] = myloss2(x,y,f1,f2,lr,w,K,L,options)
       end
   end
 
-  g = l1 + (sumloss)' + l2;
+  g = l1 + (sumloss/num)' + l2;
