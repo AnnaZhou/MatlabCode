@@ -1,5 +1,8 @@
-%%cost=loss+gamma_A*||f||_H+gamma_I*||f||_I
+ %%cost=loss+gamma_A*||f||_H+gamma_I*||f||_I
  %%optimization by SGD/l_BFGS
+ %%this function are depended on {Melacci, Stefano and Belkin, Mikhail}'s primal Laplacian SVM library.
+ %%the dataset used is also in the LapSVM library. Please google it.
+ 
  
   % load data
   load('/Users/Anna/Documents/MatlabCode/lapsvmp_v02/gui/2moons.mat');
