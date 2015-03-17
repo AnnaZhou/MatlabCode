@@ -1,12 +1,7 @@
 function [d] = lbfgs(g,s,y,H0)
 % BFGS Search Direction
-%
-% This function returns the (L-BFGS) approximate inverse Hessian,
-% multiplied by the gradient
-%
-% If you pass in all previous directions/sizes, it will be the same as full BFGS
-% If you truncate to the k most recent directions/sizes, it will be L-BFGS
-% p-dim,k-samples
+% p - dim
+% k - samples
 % s - previous search directions (p by k)
 % y - previous step sizes (p by k)
 % g - gradient (p by 1)
