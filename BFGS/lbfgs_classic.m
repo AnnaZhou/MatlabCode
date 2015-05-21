@@ -35,7 +35,7 @@ function [w,iter,loss] = lbfgs_classic(x0,y0,fun)
      wt1=w-eta0*p;
      
      f= wt1'*x;
-     [v1,g1]=myloss(x,y,f,lr,wt1);
+     [v1,g1]=myloss(x,y,f,lr,wt1); //
      
      sk1=wt1-w;
      yk1=g1-g;
