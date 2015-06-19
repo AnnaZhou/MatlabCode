@@ -9,7 +9,7 @@ function [v,g] = mylossdual(x,y,f1,f2,lr,w,K,L,options)
   g= lr*w;
   sumloss = zeros(1,n);   
   v=0;
-  myk=calckernel(options,x',f1'); %1*n
+  myk=calckernel(options,x',f1'); %1*n, function from lapSVM
   
   f=w'*myk'; 
  
